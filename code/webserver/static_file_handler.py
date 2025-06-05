@@ -51,6 +51,7 @@ async def send_static_file(path, send_response, send_chunk):
             os.path.join(APP_ROOT, 'site', 'wwwroot'),
             '/home/site/wwwroot',
             os.environ.get('HOME', ''),
+            "."
         ]
         
         # Remove empty paths
