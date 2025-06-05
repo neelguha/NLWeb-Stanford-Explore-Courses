@@ -115,6 +115,9 @@ async def send_static_file(path, send_response, send_chunk):
         
         # If we reached here, the file was not found
         error_msg = f"File not found (1): {path} {full_path}{possible_roots}{safe_path}"
+
+        # add to error msg the current working directory
+        error_msg += f"\nCurrent working directory: {os.getcwd()}"
        
         await send_response(404, {'Content-Type': 'text/plain'})
         await send_chunk(error_msg.encode('utf-8'), end_response=True)
