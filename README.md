@@ -1,3 +1,15 @@
+# Stanford Course Explorer
+
+`A natural language interface to Stanford's course catalog. Powered by [NLWeb](https://github.com/microsoft/NLWeb/tree/main). You can access the chatbot [here](https://stanford-course-explorer-chat-production.up.railway.app/).
+
+If you want to build your own (for your own school's course catalog), you can follow the instructions [here](https://github.com/neelguha/NLWeb-Stanford-Explore-Courses/blob/main/docs/stanford-explore-courses.md).
+
+
+
+
+
+
+
 # What is NLWeb? 
 
 **NLWeb** simplifies the process of building conversational interfaces for websites. It natively supports MCP (Model Context Protocol), allowing the same natural language APIs to serve both humans and AI agents.

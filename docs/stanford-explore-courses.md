@@ -63,6 +63,8 @@ This script will download the courses and save them to the `data/json/courses.js
 
 Because some of these objects are too large to fit in the database, we truncate the description field. See `download_courses.py` for more details.
 
+If you want to make a similar chatbot for your own school's course catalog, then you need to produce your own json file. **You need to make sure that each course object contains a "@type" field, and that each course object is less than 20k characters.**
+
 ## Load the data into the database
 
 ```bash
@@ -74,3 +76,8 @@ python -m tools.db_load ../data/json/courses.json "Stanford-Explore-Courses"
 ```bash
 python app-file.py
 ```
+
+
+## Notes:
+
+This repository is a fork of the NLWeb repository. The one meaningful change we made was to move `static` under `code`. This makes hosting on Railway easier.
